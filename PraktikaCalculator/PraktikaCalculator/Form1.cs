@@ -16,10 +16,12 @@ namespace PraktikaCalculator
        
         int count;
         bool znak = true;
+
         public Form1()
         {
             InitializeComponent();
         }
+
         private void calculate()
         {
             switch (count)
@@ -45,9 +47,11 @@ namespace PraktikaCalculator
                     break;
             }
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -77,31 +81,38 @@ namespace PraktikaCalculator
         {
             textBox1.Text = textBox1.Text + 5;
         }
+
         private void button6_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 6;
         }
+
         private void button7_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 7;
         }
+
         private void button8_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 8;
         }
+
         private void button9_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 9;
         }
+
         private void button10_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 0;
         }
+
         private void button11_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + ",";
         }
-        private void button12_Click(object sender, EventArgs e)
+
+        private void button12_Click(object sender, EventArgs e) //Вычитание
         {
             slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -109,7 +120,8 @@ namespace PraktikaCalculator
             label1.Text = slag1.ToString() + "-";
             znak = true;
         }
-        private void button13_Click(object sender, EventArgs e)
+
+        private void button13_Click(object sender, EventArgs e) //Умножение
         {
             slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -117,7 +129,8 @@ namespace PraktikaCalculator
             label1.Text = slag1.ToString() + "*";
             znak = true;
         }
-        private void button14_Click(object sender, EventArgs e)
+
+        private void button14_Click(object sender, EventArgs e) //Деление
         {
             slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -125,7 +138,8 @@ namespace PraktikaCalculator
             label1.Text = slag1.ToString() + "/";
             znak = true;
         }
-        private void button15_Click(object sender, EventArgs e)
+
+        private void button15_Click(object sender, EventArgs e) //Сложение
         {
             slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -133,7 +147,8 @@ namespace PraktikaCalculator
             label1.Text = slag1.ToString() + "+";
             znak = true;
         }
-        private void button16_Click(object sender, EventArgs e)
+
+        private void button16_Click(object sender, EventArgs e) //Ввод знака для числа
         {
             if (znak == true)
             {
@@ -146,15 +161,18 @@ namespace PraktikaCalculator
                 znak = true;
             }
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-        private void button18_Click(object sender, EventArgs e)
+
+        private void button18_Click(object sender, EventArgs e) //Стереть всё
         {
             textBox1.Text = "";
             label1.Text = "";
         }
-        private void button19_Click(object sender, EventArgs e)
+        
+        private void button19_Click(object sender, EventArgs e) //Стирание по одному
         {
             int lenght = textBox1.Text.Length - 1;
             string text = textBox1.Text;
@@ -164,7 +182,8 @@ namespace PraktikaCalculator
                 textBox1.Text += 1;
             }
         }
-        private void button20_Click(object sender, EventArgs e)
+
+        private void button20_Click(object sender, EventArgs e) //Функция тангенса
         {
             double tg;
             slag1 = float.Parse(textBox1.Text);
@@ -173,7 +192,7 @@ namespace PraktikaCalculator
             textBox1.Text = tg.ToString();
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e) //Защита от ввода текста
         {
             char number = e.KeyChar;
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && (e.KeyChar <= 39 || e.KeyChar >= 46) && number != 47 && number != 61) 
@@ -182,7 +201,7 @@ namespace PraktikaCalculator
             }
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        private void button21_Click(object sender, EventArgs e) //Функция котангенса
         {
             double ctg;
             slag1 = float.Parse(textBox1.Text);
@@ -191,7 +210,7 @@ namespace PraktikaCalculator
             textBox1.Text = ctg.ToString();
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        private void button17_Click(object sender, EventArgs e) //Равно
         {
             calculate();
             label1.Text = "";
