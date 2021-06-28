@@ -12,8 +12,8 @@ namespace PraktikaCalculator
 {
     public partial class Form1 : Form
     {
-        float a, b;
-        double PI = 3.14;
+        float slag1, result, slag2;
+       
         int count;
         bool znak = true;
         public Form1()
@@ -25,20 +25,20 @@ namespace PraktikaCalculator
             switch (count)
             {
                 case 1:
-                    b = a + float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    result = slag1 + float.Parse(textBox1.Text);
+                    textBox1.Text = result.ToString();
                     break;
                 case 2:
-                    b = a - float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    result = slag1 - float.Parse(textBox1.Text);
+                    textBox1.Text = result.ToString();
                     break;
                 case 3:
-                    b = a * float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    result = slag1 * float.Parse(textBox1.Text);
+                    textBox1.Text = result.ToString();
                     break;
                 case 4:
-                    b = a / float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    result = slag1 / float.Parse(textBox1.Text);
+                    textBox1.Text = result.ToString();
                     break;
 
                 default:
@@ -97,34 +97,34 @@ namespace PraktikaCalculator
         }
         private void button12_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
+            slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 2;
-            label1.Text = a.ToString() + "-";
+            label1.Text = slag1.ToString() + "-";
             znak = true;
         }
         private void button13_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
+            slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 3;
-            label1.Text = a.ToString() + "*";
+            label1.Text = slag1.ToString() + "*";
             znak = true;
         }
         private void button14_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
+            slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 4;
-            label1.Text = a.ToString() + "/";
+            label1.Text = slag1.ToString() + "/";
             znak = true;
         }
         private void button15_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
+            slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 1;
-            label1.Text = a.ToString() + "+";
+            label1.Text = slag1.ToString() + "+";
             znak = true;
         }
         private void button16_Click(object sender, EventArgs e)
@@ -161,11 +161,21 @@ namespace PraktikaCalculator
         private void button20_Click(object sender, EventArgs e)
         {
             double tg;
-            a = float.Parse(textBox1.Text);
+            slag1 = float.Parse(textBox1.Text);
             textBox1.Clear();
-            tg = Math.Tan(a);
+            tg = Math.Tan(slag1);
             textBox1.Text = tg.ToString();
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            double ctg;
+            slag1 = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            ctg = 1/Math.Tan(slag1);
+            textBox1.Text = ctg.ToString();
+        }
+
         private void button17_Click(object sender, EventArgs e)
         {
             calculate();
