@@ -109,43 +109,67 @@ namespace PraktikaCalculator
 
         private void button11_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + ",";
+            bool drob = false;
+            
+            if (drob == true)
+            {
+                textBox1.Text = textBox1.Text;
+            }
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = textBox1.Text + ",";
+
+                drob = true;
+            }
+      
         }
 
         private void button12_Click(object sender, EventArgs e) //Вычитание
         {
-            slag1 = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 2;
-            label1.Text = slag1.ToString() + "-";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                slag1 = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 2;
+                label1.Text = slag1.ToString() + "-";
+                znak = true;
+            }
         }
 
         private void button13_Click(object sender, EventArgs e) //Умножение
         {
-            slag1 = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 3;
-            label1.Text = slag1.ToString() + "*";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                slag1 = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 3;
+                label1.Text = slag1.ToString() + "*";
+                znak = true;
+            }
         }
 
         private void button14_Click(object sender, EventArgs e) //Деление
         {
-            slag1 = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 4;
-            label1.Text = slag1.ToString() + "/";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                slag1 = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 4;
+                label1.Text = slag1.ToString() + "/";
+                znak = true;
+            }
         }
 
         private void button15_Click(object sender, EventArgs e) //Сложение
         {
-            slag1 = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 1;
-            label1.Text = slag1.ToString() + "+";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                slag1 = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 1;
+                label1.Text = slag1.ToString() + "+";
+                znak = true;
+            }
         }
 
         private void button16_Click(object sender, EventArgs e) //Ввод знака для числа
@@ -185,11 +209,14 @@ namespace PraktikaCalculator
 
         private void button20_Click(object sender, EventArgs e) //Функция тангенса
         {
-            double tg;
-            slag1 = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            tg = Math.Tan(slag1);
-            textBox1.Text = tg.ToString();
+            if (textBox1.Text != "")
+            {
+                double tg;
+                slag1 = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                tg = Math.Tan(slag1);
+                textBox1.Text = tg.ToString();
+            }
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e) //Защита от ввода текста
@@ -203,11 +230,14 @@ namespace PraktikaCalculator
 
         private void button21_Click(object sender, EventArgs e) //Функция котангенса
         {
-            double ctg;
-            slag1 = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            ctg = 1/Math.Tan(slag1);
-            textBox1.Text = ctg.ToString();
+            if (textBox1.Text != "")
+            {
+                double ctg;
+                slag1 = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                ctg = 1 / Math.Tan(slag1);
+                textBox1.Text = ctg.ToString();
+            }
         }
 
         private void button17_Click(object sender, EventArgs e) //Равно
