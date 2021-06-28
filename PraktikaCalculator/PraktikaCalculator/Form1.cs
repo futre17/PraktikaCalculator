@@ -50,23 +50,29 @@ namespace PraktikaCalculator
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 1;
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 2;
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 3;
         }
+
         private void button4_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 4;
         }
+
         private void button5_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 5;
@@ -165,6 +171,15 @@ namespace PraktikaCalculator
             textBox1.Clear();
             tg = Math.Tan(slag1);
             textBox1.Text = tg.ToString();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && (e.KeyChar <= 39 || e.KeyChar >= 46) && number != 47 && number != 61) 
+            {
+                e.Handled = true;
+            }
         }
 
         private void button21_Click(object sender, EventArgs e)

@@ -57,11 +57,12 @@ namespace PraktikaCalculator
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(42, 11);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label1
             // 
@@ -76,7 +77,7 @@ namespace PraktikaCalculator
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(13, 123);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 2;
@@ -87,7 +88,7 @@ namespace PraktikaCalculator
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(83, 123);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 3;
@@ -98,7 +99,7 @@ namespace PraktikaCalculator
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(150, 123);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 19);
             this.button3.TabIndex = 4;
@@ -109,7 +110,7 @@ namespace PraktikaCalculator
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(13, 156);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 19);
             this.button4.TabIndex = 5;
@@ -120,7 +121,7 @@ namespace PraktikaCalculator
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(83, 156);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 19);
             this.button5.TabIndex = 6;
@@ -131,7 +132,7 @@ namespace PraktikaCalculator
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(150, 156);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(56, 19);
             this.button6.TabIndex = 7;
@@ -142,7 +143,7 @@ namespace PraktikaCalculator
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(13, 186);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(56, 19);
             this.button7.TabIndex = 8;
@@ -153,7 +154,7 @@ namespace PraktikaCalculator
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(83, 186);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(56, 19);
             this.button8.TabIndex = 9;
@@ -164,7 +165,7 @@ namespace PraktikaCalculator
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(150, 186);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(56, 19);
             this.button9.TabIndex = 10;
@@ -175,7 +176,7 @@ namespace PraktikaCalculator
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(83, 218);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(56, 19);
             this.button10.TabIndex = 11;
@@ -186,7 +187,7 @@ namespace PraktikaCalculator
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(13, 218);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(56, 19);
             this.button11.TabIndex = 12;
@@ -197,7 +198,7 @@ namespace PraktikaCalculator
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(220, 123);
-            this.button12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(56, 19);
             this.button12.TabIndex = 13;
@@ -208,7 +209,7 @@ namespace PraktikaCalculator
             // button13
             // 
             this.button13.Location = new System.Drawing.Point(220, 156);
-            this.button13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button13.Margin = new System.Windows.Forms.Padding(2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(56, 19);
             this.button13.TabIndex = 14;
@@ -219,7 +220,7 @@ namespace PraktikaCalculator
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(220, 186);
-            this.button14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button14.Margin = new System.Windows.Forms.Padding(2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(56, 19);
             this.button14.TabIndex = 15;
@@ -230,7 +231,7 @@ namespace PraktikaCalculator
             // button15
             // 
             this.button15.Location = new System.Drawing.Point(220, 91);
-            this.button15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button15.Margin = new System.Windows.Forms.Padding(2);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(56, 19);
             this.button15.TabIndex = 16;
@@ -241,7 +242,7 @@ namespace PraktikaCalculator
             // button16
             // 
             this.button16.Location = new System.Drawing.Point(150, 91);
-            this.button16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(56, 19);
             this.button16.TabIndex = 17;
@@ -252,7 +253,7 @@ namespace PraktikaCalculator
             // button17
             // 
             this.button17.Location = new System.Drawing.Point(150, 218);
-            this.button17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button17.Margin = new System.Windows.Forms.Padding(2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(126, 19);
             this.button17.TabIndex = 18;
@@ -263,7 +264,7 @@ namespace PraktikaCalculator
             // button18
             // 
             this.button18.Location = new System.Drawing.Point(13, 91);
-            this.button18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button18.Margin = new System.Windows.Forms.Padding(2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(55, 19);
             this.button18.TabIndex = 19;
@@ -274,7 +275,7 @@ namespace PraktikaCalculator
             // button19
             // 
             this.button19.Location = new System.Drawing.Point(81, 91);
-            this.button19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button19.Margin = new System.Windows.Forms.Padding(2);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(56, 19);
             this.button19.TabIndex = 20;
@@ -285,7 +286,7 @@ namespace PraktikaCalculator
             // button20
             // 
             this.button20.Location = new System.Drawing.Point(13, 60);
-            this.button20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button20.Margin = new System.Windows.Forms.Padding(2);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(124, 26);
             this.button20.TabIndex = 21;
@@ -332,7 +333,7 @@ namespace PraktikaCalculator
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
