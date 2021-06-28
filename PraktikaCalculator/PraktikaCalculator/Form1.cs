@@ -166,16 +166,6 @@ namespace PraktikaCalculator
             tg = Math.Tan(a);
             textBox1.Text = tg.ToString();
         }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-            double ctg;
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            ctg = 1/Math.Tan(a);
-            textBox1.Text = ctg.ToString();
-        }
-
         private void button17_Click(object sender, EventArgs e)
         {
             calculate();
