@@ -2,11 +2,13 @@
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
+
 namespace PraktikaCalculator
 {
+ 
     public partial class Form1 : Form
     {
-        float slag1, result, slag2;
+        float slag1, result;
        
         int count;
         bool znak = true;
@@ -15,7 +17,7 @@ namespace PraktikaCalculator
         {
             InitializeComponent();
         }
-
+        
         private void calculate()
         {
             switch (count)
@@ -113,19 +115,11 @@ namespace PraktikaCalculator
                     textBox1.Text = textBox1.Text + ",";
                     
                 }
-                
-                foreach (Match match in Regex.Matches(text, point, RegexOptions.IgnoreCase))
-                {
-                    button11.Enabled = false;
-                }
 
-               
-           
-            
-
-
-
-
+            foreach (Match match in Regex.Matches(text, point, RegexOptions.IgnoreCase))
+            {
+                button11.Enabled = false;
+            }
         }
 
         private void button12_Click(object sender, EventArgs e) //Вычитание

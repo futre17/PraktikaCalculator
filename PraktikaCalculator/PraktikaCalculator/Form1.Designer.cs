@@ -56,10 +56,10 @@ namespace PraktikaCalculator
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(42, 11);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(56, 14);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
+            this.textBox1.Size = new System.Drawing.Size(261, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -67,19 +67,18 @@ namespace PraktikaCalculator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 1;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 123);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(17, 151);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,10 +86,10 @@ namespace PraktikaCalculator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(83, 123);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(111, 151);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 19);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -98,10 +97,10 @@ namespace PraktikaCalculator
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(150, 123);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(200, 151);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 19);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -109,10 +108,10 @@ namespace PraktikaCalculator
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(13, 156);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(17, 192);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 19);
+            this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -120,10 +119,10 @@ namespace PraktikaCalculator
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(83, 156);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(111, 192);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 19);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
@@ -131,10 +130,10 @@ namespace PraktikaCalculator
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(150, 156);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(200, 192);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 19);
+            this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 7;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
@@ -142,10 +141,10 @@ namespace PraktikaCalculator
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(13, 186);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Location = new System.Drawing.Point(17, 229);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(56, 19);
+            this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 8;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
@@ -153,10 +152,10 @@ namespace PraktikaCalculator
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(83, 186);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Location = new System.Drawing.Point(111, 229);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 19);
+            this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 9;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
@@ -164,10 +163,10 @@ namespace PraktikaCalculator
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(150, 186);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
+            this.button9.Location = new System.Drawing.Point(200, 229);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(56, 19);
+            this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 10;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
@@ -175,10 +174,10 @@ namespace PraktikaCalculator
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(83, 218);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
+            this.button10.Location = new System.Drawing.Point(111, 268);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(56, 19);
+            this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 11;
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = true;
@@ -186,10 +185,10 @@ namespace PraktikaCalculator
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(13, 218);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
+            this.button11.Location = new System.Drawing.Point(17, 268);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(56, 19);
+            this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 12;
             this.button11.Text = ",";
             this.button11.UseVisualStyleBackColor = true;
@@ -197,10 +196,10 @@ namespace PraktikaCalculator
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(220, 123);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
+            this.button12.Location = new System.Drawing.Point(293, 151);
+            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(56, 19);
+            this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 13;
             this.button12.Text = "-";
             this.button12.UseVisualStyleBackColor = true;
@@ -208,10 +207,10 @@ namespace PraktikaCalculator
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(220, 156);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
+            this.button13.Location = new System.Drawing.Point(293, 192);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(56, 19);
+            this.button13.Size = new System.Drawing.Size(75, 23);
             this.button13.TabIndex = 14;
             this.button13.Text = "*";
             this.button13.UseVisualStyleBackColor = true;
@@ -219,10 +218,10 @@ namespace PraktikaCalculator
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(220, 186);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
+            this.button14.Location = new System.Drawing.Point(293, 229);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(56, 19);
+            this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 15;
             this.button14.Text = "/";
             this.button14.UseVisualStyleBackColor = true;
@@ -230,10 +229,10 @@ namespace PraktikaCalculator
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(220, 91);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
+            this.button15.Location = new System.Drawing.Point(293, 112);
+            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(56, 19);
+            this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 16;
             this.button15.Text = "+";
             this.button15.UseVisualStyleBackColor = true;
@@ -241,10 +240,10 @@ namespace PraktikaCalculator
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(150, 91);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
+            this.button16.Location = new System.Drawing.Point(200, 112);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(56, 19);
+            this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 17;
             this.button16.Text = "+/-";
             this.button16.UseVisualStyleBackColor = true;
@@ -252,10 +251,10 @@ namespace PraktikaCalculator
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(150, 218);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
+            this.button17.Location = new System.Drawing.Point(200, 268);
+            this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(126, 19);
+            this.button17.Size = new System.Drawing.Size(168, 23);
             this.button17.TabIndex = 18;
             this.button17.Text = "=";
             this.button17.UseVisualStyleBackColor = true;
@@ -263,10 +262,10 @@ namespace PraktikaCalculator
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(13, 91);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
+            this.button18.Location = new System.Drawing.Point(17, 112);
+            this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(55, 19);
+            this.button18.Size = new System.Drawing.Size(73, 23);
             this.button18.TabIndex = 19;
             this.button18.Text = "C";
             this.button18.UseVisualStyleBackColor = true;
@@ -274,10 +273,10 @@ namespace PraktikaCalculator
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(81, 91);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
+            this.button19.Location = new System.Drawing.Point(108, 112);
+            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(56, 19);
+            this.button19.Size = new System.Drawing.Size(75, 23);
             this.button19.TabIndex = 20;
             this.button19.Text = "<<";
             this.button19.UseVisualStyleBackColor = true;
@@ -285,10 +284,10 @@ namespace PraktikaCalculator
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(13, 60);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
+            this.button20.Location = new System.Drawing.Point(17, 74);
+            this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(124, 26);
+            this.button20.Size = new System.Drawing.Size(165, 32);
             this.button20.TabIndex = 21;
             this.button20.Text = "tg(x)";
             this.button20.UseVisualStyleBackColor = true;
@@ -296,10 +295,10 @@ namespace PraktikaCalculator
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(150, 60);
-            this.button21.Margin = new System.Windows.Forms.Padding(2);
+            this.button21.Location = new System.Drawing.Point(200, 74);
+            this.button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(126, 26);
+            this.button21.Size = new System.Drawing.Size(168, 32);
             this.button21.TabIndex = 22;
             this.button21.Text = "ctg(x)";
             this.button21.UseVisualStyleBackColor = true;
@@ -307,9 +306,9 @@ namespace PraktikaCalculator
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 274);
+            this.ClientSize = new System.Drawing.Size(385, 337);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
@@ -333,7 +332,7 @@ namespace PraktikaCalculator
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -343,9 +342,6 @@ namespace PraktikaCalculator
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -367,6 +363,8 @@ namespace PraktikaCalculator
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Label label1;
     }
 }
 
