@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace PraktikaCalculator
 {
@@ -107,21 +101,31 @@ namespace PraktikaCalculator
             textBox1.Text = textBox1.Text + 0;
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e) //Точка для десятичной дроби
         {
-            bool drob = false;
             
-            if (drob == true)
-            {
-                textBox1.Text = textBox1.Text;
-            }
-            if (textBox1.Text != "")
-            {
-                textBox1.Text = textBox1.Text + ",";
+            string point = ".";
+            string text = textBox1.Text;            
+            button11.Enabled = true;
+         
+                if (textBox1.Text != "")
+                {
+                    textBox1.Text = textBox1.Text + ",";
+                    
+                }
+                
+                foreach (Match match in Regex.Matches(text, point, RegexOptions.IgnoreCase))
+                {
+                    button11.Enabled = false;
+                }
 
-                drob = true;
-            }
-      
+               
+           
+            
+
+
+
+
         }
 
         private void button12_Click(object sender, EventArgs e) //Вычитание
