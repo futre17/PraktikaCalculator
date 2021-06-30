@@ -16,6 +16,7 @@ namespace PraktikaCalculator
         public Form1()
         {
             InitializeComponent();
+            
         }
         
         private void calculate()
@@ -105,21 +106,17 @@ namespace PraktikaCalculator
 
         private void button11_Click(object sender, EventArgs e) //Точка для десятичной дроби
         {
-            
-            string point = ".";
-            string text = textBox1.Text;            
-            button11.Enabled = true;
-         
-                if (textBox1.Text != "")
-                {
-                    textBox1.Text = textBox1.Text + ",";
-                    
-                }
+            string point = ",,";
 
-            foreach (Match match in Regex.Matches(text, point, RegexOptions.IgnoreCase))
-            {
-                button11.Enabled = false;
+            if (textBox1.Text != "")
+            {     
+                textBox1.Text = textBox1.Text + ",";
+                
             }
+            foreach (Match match1 in Regex.Matches(textBox1.Text, point, RegexOptions.IgnoreCase))
+                {
+                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
+                }
         }
 
         private void button12_Click(object sender, EventArgs e) //Вычитание
