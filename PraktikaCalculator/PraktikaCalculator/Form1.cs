@@ -8,42 +8,16 @@ namespace PraktikaCalculator
  
     public partial class Form1 : Form
     {
-        float slag1, result;
-        
+        double slag1 = 0, slag2, result;
+        bool sign = true,dot = false, znak = true;
         int count;
-        bool znak = true;
-
         public Form1()
         {
             InitializeComponent();
             
         }
         
-        private void calculate()
-        {
-            switch (count)
-            {
-                case 1:
-                    result = slag1 + float.Parse(textBox1.Text);
-                    textBox1.Text = result.ToString();
-                    break;
-                case 2:
-                    result = slag1 - float.Parse(textBox1.Text);
-                    textBox1.Text = result.ToString();
-                    break;
-                case 3:
-                    result = slag1 * float.Parse(textBox1.Text);
-                    textBox1.Text = result.ToString();
-                    break;
-                case 4:
-                    result = slag1 / float.Parse(textBox1.Text);
-                    textBox1.Text = result.ToString();
-                    break;
-
-                default:
-                    break;
-            }
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -237,8 +211,21 @@ namespace PraktikaCalculator
 
         private void button17_Click(object sender, EventArgs e) //Равно
         {
-            calculate();
-            label1.Text = "";
+            if (textBox1.Text != "")
+            {
+                 = Double.Parse(textBox1.Text);
+               calculator2 calculator = Class1.cal2(count);
+                result = calculator.Calculate(slag1, slag2);
+            }
+            else
+            {
+                calculator1 calculator = Class1.CreateCalculator(count);
+                result = calculator.Calculate(slag1);
+            }
+
+
+            textBox1.Text = result.ToString();
+            dot = false;
         }
     }
 }

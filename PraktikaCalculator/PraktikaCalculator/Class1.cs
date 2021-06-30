@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PraktikaCalculator
 {
-    class Class1 : Form1
+    static class Class1
     {
-       public static object calculator(int count)
+       public static calculator2 cal2(int count)
         {
             switch (count)
             {
@@ -20,57 +20,53 @@ namespace PraktikaCalculator
                     return new DIVITION();
                 case 4:
                     return new MULTIPLY();
-                case 5:
-                    return new TG();
-                case 6:
-                    return new CTG();
                 default:
-                    return 0;
+                    return new PLUS();
 
             }
             
         }
     }
-    interface calculator
+    interface calculator2
     {
         double Calculate(double firstValue, double secondValue);
     }
-    class PLUS : calculator
+    class PLUS : calculator2
     {
        public double Calculate(double firstValue, double secondValue)
         {
             return firstValue + secondValue;
         }
     }
-    class MINUS : calculator
+    class MINUS : calculator2
     {
         public double Calculate(double firstValue, double secondValue)
         {
             return firstValue - secondValue;
         }
     }
-    class DIVITION : calculator
+    class DIVITION : calculator2
     {
         public double Calculate(double firstValue, double secondValue)
         {
             return firstValue / secondValue;
         }
     }
-    class MULTIPLY : calculator
+    class MULTIPLY : calculator2
     {
         public double Calculate(double firstValue, double secondValue)
         {
             return firstValue * secondValue;
         }
     }
-    class TG : calculator
+    class TG : calculator1
     {
         public double Calculate(double firstValue, double secondValue)
         {
             return Math.Tan(firstValue);
         }
     }
-    class CTG : calculator
+    class CTG : calculator1
     {
         public double Calculate(double firstValue, double secondValue)
         {
