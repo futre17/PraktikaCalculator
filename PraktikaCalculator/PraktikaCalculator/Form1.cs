@@ -9,7 +9,7 @@ namespace PraktikaCalculator
     public partial class Form1 : Form
     {
         double slag1 = 0, slag2, result;
-        bool dot = false, znak = true;
+        bool dot = false, znak;
         int count;
         public Form1()
         {

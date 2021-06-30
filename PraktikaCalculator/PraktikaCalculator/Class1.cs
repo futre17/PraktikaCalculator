@@ -28,28 +28,28 @@ namespace PraktikaCalculator
     {
         double Calculate(double firstValue, double secondValue);
     }
-    class PLUS : calculator2
+     public class PLUS : calculator2
     {
        public double Calculate(double firstValue, double secondValue)
         {
             return firstValue + secondValue;
         }
     }
-    class MINUS : calculator2
+    public class MINUS : calculator2
     {
         public double Calculate(double firstValue, double secondValue)
         {
             return firstValue - secondValue;
         }
     }
-    class DIVITION : calculator2
+    public class DIVITION : calculator2
     {
         public double Calculate(double firstValue, double secondValue)
         {
             return firstValue / secondValue;
         }
     }
-    class MULTIPLY : calculator2
+    public class MULTIPLY : calculator2
     {
         public double Calculate(double firstValue, double secondValue)
         {
@@ -78,14 +78,14 @@ namespace PraktikaCalculator
         double Calculate(double firstValue);
     }
 
-    class TG : calculator1
+    public class TG : calculator1
     {
         public double Calculate(double firstValue)
         {
             return Math.Tan(firstValue);
         }
     }
-    class CTG : calculator1
+    public class CTG : calculator1
     {
         public double Calculate(double firstValue)
         {
