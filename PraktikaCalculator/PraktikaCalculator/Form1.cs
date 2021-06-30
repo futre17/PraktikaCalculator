@@ -9,7 +9,7 @@ namespace PraktikaCalculator
     public partial class Form1 : Form
     {
         double slag1 = 0, slag2, result;
-        bool sign = true,dot = false, znak = true;
+        bool dot = false, znak = true;
         int count;
         public Form1()
         {
@@ -80,17 +80,11 @@ namespace PraktikaCalculator
 
         private void button11_Click(object sender, EventArgs e) //Точка для десятичной дроби
         {
-            string point = ",,";
-
-            if (textBox1.Text != "")
-            {     
+            if (dot == false && textBox1.Text != "")
+            {
                 textBox1.Text = textBox1.Text + ",";
-                
+                dot = true;
             }
-            foreach (Match match1 in Regex.Matches(textBox1.Text, point, RegexOptions.IgnoreCase))
-                {
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
-                }
         }
 
         private void button12_Click(object sender, EventArgs e) //Вычитание
@@ -103,6 +97,7 @@ namespace PraktikaCalculator
                 label1.Text = slag1.ToString() + "-";
                 znak = true;
             }
+            dot = false;
         }
 
         private void button13_Click(object sender, EventArgs e) //Умножение
@@ -111,10 +106,11 @@ namespace PraktikaCalculator
             {
                 slag1 = float.Parse(textBox1.Text);
                 textBox1.Clear();
-                count = 3;
+                count = 4;
                 label1.Text = slag1.ToString() + "*";
                 znak = true;
             }
+            dot = false;
         }
 
         private void button14_Click(object sender, EventArgs e) //Деление
@@ -123,10 +119,11 @@ namespace PraktikaCalculator
             {
                 slag1 = float.Parse(textBox1.Text);
                 textBox1.Clear();
-                count = 4;
+                count = 3;
                 label1.Text = slag1.ToString() + "/";
                 znak = true;
             }
+            dot = false;
         }
 
         private void button15_Click(object sender, EventArgs e) //Сложение
@@ -139,6 +136,7 @@ namespace PraktikaCalculator
                 label1.Text = slag1.ToString() + "+";
                 znak = true;
             }
+            dot = false;
         }
 
         private void button16_Click(object sender, EventArgs e) //Ввод знака для числа
@@ -153,6 +151,7 @@ namespace PraktikaCalculator
                 textBox1.Text = textBox1.Text.Replace("-", "");
                 znak = true;
             }
+            dot = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -174,17 +173,16 @@ namespace PraktikaCalculator
             {
                 textBox1.Text += 1;
             }
+            dot = false;
         }
 
         private void button20_Click(object sender, EventArgs e) //Функция тангенса
         {
             if (textBox1.Text != "")
             {
-                double tg;
                 slag1 = float.Parse(textBox1.Text);
                 textBox1.Clear();
-                tg = Math.Tan(slag1);
-                textBox1.Text = tg.ToString();
+                count = 5;
             }
         }
 
@@ -201,11 +199,9 @@ namespace PraktikaCalculator
         {
             if (textBox1.Text != "")
             {
-                double ctg;
                 slag1 = float.Parse(textBox1.Text);
                 textBox1.Clear();
-                ctg = 1 / Math.Tan(slag1);
-                textBox1.Text = ctg.ToString();
+                count = 6;
             }
         }
 
@@ -213,13 +209,13 @@ namespace PraktikaCalculator
         {
             if (textBox1.Text != "")
             {
-                 = Double.Parse(textBox1.Text);
+                slag2 = Double.Parse(textBox1.Text);
                calculator2 calculator = Class1.cal2(count);
                 result = calculator.Calculate(slag1, slag2);
             }
             else
             {
-                calculator1 calculator = Class1.CreateCalculator(count);
+                calculator1 calculator = Class2.cal1(count);
                 result = calculator.Calculate(slag1);
             }
 

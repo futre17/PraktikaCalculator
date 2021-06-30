@@ -59,16 +59,38 @@ namespace PraktikaCalculator
             return firstValue * secondValue;
         }
     }
+    static class Class2
+    {
+
+        public static calculator1 cal1(int count)
+        {
+            switch (count)
+            {
+                case 5:
+                    return new TG();
+                case 6:
+                    return new CTG();
+                default:
+                    return new TG(); // заглушка "для невозможного варианта"
+            }
+        }
+    }
+
+    interface calculator1
+    {
+        double Calculate(double firstValue);
+    }
+
     class TG : calculator1
     {
-        public double Calculate(double firstValue, double secondValue)
+        public double Calculate(double firstValue)
         {
             return Math.Tan(firstValue);
         }
     }
     class CTG : calculator1
     {
-        public double Calculate(double firstValue, double secondValue)
+        public double Calculate(double firstValue)
         {
             return 1/Math.Tan(firstValue);
         }
