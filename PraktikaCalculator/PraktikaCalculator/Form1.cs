@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
+
 
 
 namespace PraktikaCalculator
@@ -162,18 +162,22 @@ namespace PraktikaCalculator
         {
             textBox1.Text = "";
             label1.Text = "";
+            textBox2.Text = "";
         }
         
         private void button19_Click(object sender, EventArgs e) //Стирание по одному
         {
-            int lenght = textBox1.Text.Length - 1;
-            string text = textBox1.Text;
-            textBox1.Clear();
-            for(int i = 0;i < lenght; i++)
-            {
-                textBox1.Text += 1;
-            }
-            dot = false;
+             int lenght = textBox1.Text.Length - 1;
+                string text = textBox1.Text;
+                if (text[lenght] == ',') dot = false;
+                textBox1.Clear();
+                for (int i = 0; i < lenght; i++)
+                {
+                    textBox1.Text = textBox1.Text + text[i];
+                }
+          
+            label1.Text = "";
+            textBox2.Text = "";
         }
 
         private void button20_Click(object sender, EventArgs e) //Функция тангенса
@@ -184,6 +188,11 @@ namespace PraktikaCalculator
                 textBox1.Clear();
                 count = 5;
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e) //Защита от ввода текста
@@ -220,7 +229,7 @@ namespace PraktikaCalculator
             }
 
 
-            textBox1.Text = result.ToString();
+            textBox2.Text = result.ToString();
             dot = false;
         }
     }
